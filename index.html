@@ -1,0 +1,896 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Foguete.Shop — O Copiloto Inteligente para TikTok Shop Creators</title>
+  <meta name="description" content="Descubra produtos vencedores, valide seus vídeos, monitore riscos de infrações e escale suas vendas no TikTok Shop com dados e inteligência artificial.">
+  
+  <!-- SEO & Open Graph -->
+  <meta property="og:title" content="Foguete.Shop — O Radar de Crescimento no TikTok Shop">
+  <meta property="og:description" content="Pare de adivinhar o que vende. Analise milhões de dados públicos do TikTok Shop e encontre a rota perfeita para seu perfil.">
+  <meta property="og:image" content="assets/foguete_logo.png">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- CSS Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="mission-control-theme">
+
+  <!-- Header Navigation -->
+  <header class="navbar-container" id="main-header">
+    <div class="navbar-content">
+      <a href="#" class="brand-logo-wrapper" id="brand-link">
+        <img src="assets/foguete_logo.png" alt="Foguete.Shop Logo" class="brand-logo-img">
+        <span class="brand-name">Foguete<span class="dot">.</span><span class="suffix">Shop</span></span>
+      </a>
+      
+      <nav class="nav-links-wrapper" id="nav-menu">
+        <a href="#problems" class="nav-link">Problemas</a>
+        <a href="#solution" class="nav-link">Solução</a>
+        <a href="#features" class="nav-link">Recursos</a>
+        <a href="#demo" class="nav-link">Demonstração</a>
+        <a href="#proof" class="nav-link">Resultados</a>
+        <a href="#faq" class="nav-link">FAQ</a>
+      </nav>
+      
+      <div class="nav-cta-wrapper">
+        <button class="btn btn-primary btn-sm open-waitlist-btn" commandfor="waitlist-modal" command="show-modal" id="header-cta-btn">
+          Lista de Espera
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content Area -->
+  <main>
+    
+    <!-- 1. Hero Section -->
+    <section class="hero-section" id="hero">
+      <div class="hero-bg-effects">
+        <div class="glow-sphere orange-glow"></div>
+        <div class="glow-sphere blue-glow"></div>
+        <div class="grid-overlay"></div>
+      </div>
+      
+      <div class="section-container hero-container">
+        <!-- Hero Left Side: Copy -->
+        <div class="hero-text-block">
+          <div class="tag-badge">🚀 Centro de Comando TikTok Shop</div>
+          <h1 class="hero-title">
+            Descubra os <span class="gradient-text-orange">produtos certos</span> e os <span class="gradient-text-red">vídeos certos</span> para vender mais no TikTok Shop
+          </h1>
+          <p class="hero-subtitle">
+            O Foguete.Shop analisa milhões de dados do TikTok Shop para mostrar oportunidades, avaliar seu perfil e indicar exatamente onde melhorar.
+          </p>
+          <div class="hero-actions">
+            <button class="btn btn-primary btn-lg open-waitlist-btn" commandfor="waitlist-modal" command="show-modal" id="hero-primary-cta">
+              Entrar para Lista de Espera
+            </button>
+            <button class="btn btn-secondary btn-lg" id="hero-secondary-cta" href="#demo">
+              <span class="btn-icon">▶</span> Ver Demonstração
+            </button>
+          </div>
+          <div class="hero-social-proof-brief">
+            <div class="avatars-group">
+              <span class="avatar-circle">👩‍💻</span>
+              <span class="avatar-circle">👨‍🎨</span>
+              <span class="avatar-circle">🧑‍🚀</span>
+            </div>
+            <p class="brief-text">Junte-se a <strong>+2.400 criadores</strong> na lista de espera esta semana.</p>
+          </div>
+        </div>
+
+        <!-- Hero Right Side: Dynamic Interactive Dashboard Widget -->
+        <div class="hero-visual-block">
+          <div class="dashboard-window-mockup" id="hero-dashboard-widget">
+            <div class="window-header">
+              <div class="window-controls">
+                <span class="dot-btn red"></span>
+                <span class="dot-btn yellow"></span>
+                <span class="dot-btn green"></span>
+              </div>
+              <div class="window-title">foguete_shop_dashboard.exe</div>
+              <div class="window-status"><span class="status-indicator-live"></span> LIVE DATA</div>
+            </div>
+            
+            <div class="window-content grid-dashboard-layout">
+              <!-- Widget 1: Account Health Score -->
+              <div class="dash-card card-health">
+                <span class="card-tag">DESEMPENHO</span>
+                <h4 class="card-label">Score da Conta</h4>
+                <div class="score-circle-container">
+                  <svg class="progress-ring" width="100" height="100">
+                    <circle class="progress-ring__circle-bg" stroke="#101b35" stroke-width="8" fill="transparent" r="40" cx="50" cy="50"/>
+                    <circle class="progress-ring__circle" stroke="url(#orange-grad)" stroke-width="8" stroke-dasharray="251.2" stroke-dashoffset="30.14" fill="transparent" r="40" cx="50" cy="50"/>
+                    <defs>
+                      <linearGradient id="orange-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" stop-color="#f97316" />
+                        <stop offset="100%" stop-color="#ef4444" />
+                      </linearGradient>
+                    </defs>
+                  </svg>
+                  <div class="score-number-display">88<span class="percent">%</span></div>
+                </div>
+                <div class="score-caption">Ótimo crescimento • Nível A</div>
+              </div>
+              
+              <!-- Widget 2: Security Warnings -->
+              <div class="dash-card card-security animate-pulse-alert">
+                <div class="card-header-flex">
+                  <span class="card-tag tag-warning">SEGURANÇA</span>
+                  <span class="alert-icon">⚠️</span>
+                </div>
+                <h4 class="card-label">Alertas de Risco</h4>
+                <div class="alert-list">
+                  <div class="alert-item">
+                    <span class="indicator red-dot"></span>
+                    <span class="alert-text">Risco de áudio sem licença (vídeo #342)</span>
+                  </div>
+                  <div class="alert-item">
+                    <span class="indicator yellow-dot"></span>
+                    <span class="alert-text">Uso de logo restrita detectada</span>
+                  </div>
+                </div>
+                <span class="action-hint">Toque para ver correções sugeridas</span>
+              </div>
+
+              <!-- Widget 3: Winning Products Recommended -->
+              <div class="dash-card card-products">
+                <span class="card-tag tag-success">PRODUTOS SUGERIDOS</span>
+                <h4 class="card-label">Oportunidades Recomendadas</h4>
+                <div class="prod-item">
+                  <div class="prod-pic">💡</div>
+                  <div class="prod-info">
+                    <span class="prod-title">Mini Umidificador Led</span>
+                    <span class="prod-stats">Demanda: 🔥 Alta | Lucro: 68%</span>
+                  </div>
+                </div>
+                <div class="prod-item">
+                  <div class="prod-pic">💄</div>
+                  <div class="prod-info">
+                    <span class="prod-title">Bastão de Maquiagem FPS</span>
+                    <span class="prod-stats">Demanda: 🚀 Explosiva | Risco: Baixo</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Widget 4: Generated Video Script suggestion -->
+              <div class="dash-card card-script">
+                <span class="card-tag tag-info">COPILOTO ROTEIROS</span>
+                <h4 class="card-label">Gancho de Vídeo Gerado</h4>
+                <div class="script-box">
+                  <span class="script-hook">"Se você ainda usa o método tradicional para isso, você está jogando dinheiro fora no TikTok Shop..."</span>
+                  <div class="script-metrics">
+                    <span>Hook Score: 94%</span>
+                    <span>Retenção Est.: +40%</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="window-footer">
+              <div class="radar-scan-container">
+                <div class="radar-circle"></div>
+                <div class="radar-line"></div>
+                <span class="radar-status">Rastreando 14.821 vídeos do TikTok Shop por minuto...</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. Dor Atual Section -->
+    <section class="problems-section" id="problems">
+      <div class="section-container">
+        <div class="section-header text-center">
+          <span class="section-tag-badge">O Problema</span>
+          <h2 class="section-title">Você está voando sem radar?</h2>
+          <p class="section-desc">
+            Vender no TikTok Shop parece fácil, mas sem direção você consome seu tempo e não sai do lugar.
+          </p>
+        </div>
+
+        <div class="problems-grid">
+          <!-- Card 1: Pesquisa Infinita -->
+          <div class="problem-card card-hover-effect" id="prob-infinite-research">
+            <div class="card-icon">⏳</div>
+            <h3 class="card-title">Pesquisa infinita</h3>
+            <p class="card-text">
+              Horas e horas analisando vídeos no feed sem saber o que realmente está convertendo em vendas.
+            </p>
+          </div>
+
+          <!-- Card 2: Produtos Errados -->
+          <div class="problem-card card-hover-effect" id="prob-wrong-products">
+            <div class="card-icon">📉</div>
+            <h3 class="card-title">Produtos errados</h3>
+            <p class="card-text">
+              Você escolhe produtos baseados em intuição, sem evidências de demanda ou com comissão inviável.
+            </p>
+          </div>
+
+          <!-- Card 3: Conteúdo Sem Direção -->
+          <div class="problem-card card-hover-effect" id="prob-no-direction">
+            <div class="card-icon">🎬</div>
+            <h3 class="card-title">Conteúdo sem direção</h3>
+            <p class="card-text">
+              Você cria dezenas de vídeos sem saber por que uns ganham visualizações mas ninguém clica no carrinho.
+            </p>
+          </div>
+
+          <!-- Card 4: Risco de Infrações -->
+          <div class="problem-card card-hover-effect" id="prob-infractions">
+            <div class="card-icon">🚨</div>
+            <h3 class="card-title">Risco de infrações</h3>
+            <p class="card-text">
+              Você vive com medo constante de receber avisos de restrição, violação de direitos autorais ou banimento.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. Solução Section -->
+    <section class="solution-section" id="solution">
+      <div class="section-container solution-container">
+        <div class="solution-text-block">
+          <span class="section-tag-badge tag-primary-color">Nossa Solução</span>
+          <h2 class="section-title">O radar que faltava para seu crescimento</h2>
+          <p class="section-desc">
+            O Foguete.Shop transforma milhões de dados públicos do TikTok Shop em recomendações práticas para você agir imediatamente e com total segurança.
+          </p>
+          <div class="solution-bullets">
+            <div class="bullet-item">
+              <span class="bullet-check">✓</span>
+              <div>
+                <strong>Economia Absoluta de Tempo</strong>
+                <p>Nossos algoritmos fazem a pesquisa cansativa por você em segundos.</p>
+              </div>
+            </div>
+            <div class="bullet-item">
+              <span class="bullet-check">✓</span>
+              <div>
+                <strong>Validação Baseada em Evidências</strong>
+                <p>Veja estatísticas de demanda reais antes de filmar ou afiliar-se a um produto.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="solution-visual-block">
+          <!-- Flow animation mockup -->
+          <div class="radar-flow-diagram" id="solution-radar-flow">
+            <div class="flow-stage stage-tiktok">
+              <div class="stage-icon">📱</div>
+              <div class="stage-label">TikTok Shop</div>
+              <div class="stage-sub">Milhões de Dados</div>
+            </div>
+            <div class="flow-arrow">
+              <svg viewBox="0 0 100 20" fill="none" class="connecting-line">
+                <path d="M0,10 H100" stroke="#f97316" stroke-width="2" stroke-dasharray="6,4" class="pulse-path" />
+              </svg>
+            </div>
+            <div class="flow-stage stage-engine">
+              <div class="stage-icon bg-pulse-orange">🚀</div>
+              <div class="stage-label">Foguete IA</div>
+              <div class="stage-sub">Inteligência</div>
+            </div>
+            <div class="flow-arrow">
+              <svg viewBox="0 0 100 20" fill="none" class="connecting-line">
+                <path d="M0,10 H100" stroke="#ef4444" stroke-width="2" stroke-dasharray="6,4" class="pulse-path" />
+              </svg>
+            </div>
+            <div class="flow-stage stage-action">
+              <div class="stage-icon">🛠️</div>
+              <div class="stage-label">Direção</div>
+              <div class="stage-sub">Ação Direta</div>
+            </div>
+            <div class="flow-arrow">
+              <svg viewBox="0 0 100 20" fill="none" class="connecting-line">
+                <path d="M0,10 H100" stroke="#10b981" stroke-width="2" stroke-dasharray="6,4" class="pulse-path" />
+              </svg>
+            </div>
+            <div class="flow-stage stage-sales">
+              <div class="stage-icon bg-pulse-green">💰</div>
+              <div class="stage-label">Vendas</div>
+              <div class="stage-sub">Escala & ROI</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. Principais Recursos Section -->
+    <section class="features-section" id="features">
+      <div class="section-container">
+        <div class="section-header text-center">
+          <span class="section-tag-badge">Central de Recursos</span>
+          <h2 class="section-title">Pilote com o instrumental de ponta</h2>
+          <p class="section-desc">
+            Cada módulo do Foguete foi projetado para atuar como o painel de telemetria de um piloto profissional de e-commerce.
+          </p>
+        </div>
+
+        <div class="interactive-features-block">
+          <!-- Left side buttons (Tabs) -->
+          <div class="features-tabs-list" id="features-tab-menu">
+            <button class="feature-tab-btn active" data-target="feature-profile" id="tab-profile">
+              <span class="tab-icon">👤</span>
+              <div class="tab-text-wrapper">
+                <strong>Avaliação de Perfil</strong>
+                <span>Score geral da conta e fraquezas.</span>
+              </div>
+            </button>
+            
+            <button class="feature-tab-btn" data-target="feature-videos" id="tab-videos">
+              <span class="tab-icon">🎬</span>
+              <div class="tab-text-wrapper">
+                <strong>Avaliação de Vídeos</strong>
+                <span>Entenda por que uns performam e outros não.</span>
+              </div>
+            </button>
+            
+            <button class="feature-tab-btn" data-target="feature-niche" id="tab-niche">
+              <span class="tab-icon">📊</span>
+              <div class="tab-text-wrapper">
+                <strong>Avaliação de Nicho</strong>
+                <span>Identifique mercados altamente lucrativos.</span>
+              </div>
+            </button>
+            
+            <button class="feature-tab-btn" data-target="feature-products" id="tab-products">
+              <span class="tab-icon">💡</span>
+              <div class="tab-text-wrapper">
+                <strong>Inteligência de Produtos</strong>
+                <span>Descubra tendências emergentes e riscos.</span>
+              </div>
+            </button>
+            
+            <button class="feature-tab-btn" data-target="feature-safety" id="tab-safety">
+              <span class="tab-icon">🛡️</span>
+              <div class="tab-text-wrapper">
+                <strong>Segurança da Conta</strong>
+                <span>Evite banimentos e detecte infrações.</span>
+              </div>
+            </button>
+          </div>
+
+          <!-- Right side live preview screen -->
+          <div class="features-preview-screen" id="feature-preview-display">
+            <!-- 1. Profile Panel (Active by default) -->
+            <div class="preview-panel active" id="feature-profile">
+              <div class="preview-header">
+                <h3>Avaliação de Perfil</h3>
+                <span class="panel-pill">Recurso Premium</span>
+              </div>
+              <p class="panel-desc">Receba uma análise automatizada completa da sua conta com recomendações de otimização instantâneas.</p>
+              
+              <div class="panel-interactive-widget">
+                <div class="profile-score-grid">
+                  <div class="stat-card">
+                    <span class="stat-title">Comparação Concorrentes</span>
+                    <span class="stat-val">+42% acima da média</span>
+                    <span class="stat-change text-green">▲ Top 5% do Nicho</span>
+                  </div>
+                  <div class="stat-card">
+                    <span class="stat-title">Nível Geral da Conta</span>
+                    <span class="stat-val font-accent text-orange">Nível A-</span>
+                    <span class="stat-change text-gray">Média de 4.2k views/vídeo</span>
+                  </div>
+                </div>
+                <div class="panel-details-list">
+                  <div class="panel-list-item">
+                    <span class="icon-tag green">✔</span>
+                    <div>
+                      <strong>Ponto Forte:</strong>
+                      <span>Excelente consistência de postagens e ganchos iniciais fortes.</span>
+                    </div>
+                  </div>
+                  <div class="panel-list-item">
+                    <span class="icon-tag yellow">⚡</span>
+                    <div>
+                      <strong>Ponto Fraco:</strong>
+                      <span>CTA final com conversão abaixo do esperado. Roteiro carece de urgência.</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- 2. Videos Panel -->
+            <div class="preview-panel" id="feature-videos">
+              <div class="preview-header">
+                <h3>Avaliação de Vídeos</h3>
+                <span class="panel-pill">IA Integrada</span>
+              </div>
+              <p class="panel-desc">Deixe nossa IA analisar os elementos visuais, ganchos e gatilhos de engajamento do seu conteúdo.</p>
+              
+              <div class="panel-interactive-widget">
+                <div class="video-performance-card">
+                  <div class="video-thumbnail-placeholder">
+                    <span class="play-small">▶</span>
+                    <span class="duration">0:45</span>
+                  </div>
+                  <div class="video-analytics-details">
+                    <strong>Análise do Vídeo #291</strong>
+                    <div class="progress-bar-group">
+                      <label>Ganchos Iniciais (Hook)</label>
+                      <div class="progress-track"><div class="progress-fill" style="width: 85%"></div></div>
+                      <span class="pct">85% - Excelente</span>
+                    </div>
+                    <div class="progress-bar-group">
+                      <label>Gatilhos de Conversão (CTA)</label>
+                      <div class="progress-track"><div class="progress-fill" style="width: 48%; background-color: var(--color-orange)"></div></div>
+                      <span class="pct">48% - Precisa melhorar</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- 3. Niche Panel -->
+            <div class="preview-panel" id="feature-niche">
+              <div class="preview-header">
+                <h3>Avaliação de Nicho</h3>
+                <span class="panel-pill">Tempo Real</span>
+              </div>
+              <p class="panel-desc">Identifique mercados e categorias em aceleração e evite nichos saturados ou com margens baixas.</p>
+              
+              <div class="panel-interactive-widget">
+                <div class="niche-ranking-table">
+                  <div class="table-row table-head">
+                    <span>Nicho</span>
+                    <span>Crescimento</span>
+                    <span>Concorrência</span>
+                    <span>Faturamento Potencial</span>
+                  </div>
+                  <div class="table-row">
+                    <strong>Cozinha Inteligente</strong>
+                    <span class="text-green">+180%</span>
+                    <span class="text-orange">Média</span>
+                    <span class="text-green">R$ 45k - R$ 90k</span>
+                  </div>
+                  <div class="table-row">
+                    <strong>Beleza Viral</strong>
+                    <span class="text-green">+95%</span>
+                    <span class="text-red">Alta</span>
+                    <span class="text-green">R$ 120k+</span>
+                  </div>
+                  <div class="table-row">
+                    <strong>Organização Doméstica</strong>
+                    <span class="text-yellow">+32%</span>
+                    <span class="text-green">Baixa</span>
+                    <span class="text-yellow">R$ 15k - R$ 35k</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- 4. Products Panel -->
+            <div class="preview-panel" id="feature-products">
+              <div class="preview-header">
+                <h3>Inteligência de Produtos</h3>
+                <span class="panel-pill">Radar Ativo</span>
+              </div>
+              <p class="panel-desc">Descubra produtos vencedores emergentes com altos volumes de venda antes da concorrência inundar o mercado.</p>
+              
+              <div class="panel-interactive-widget">
+                <div class="product-opportunity-card">
+                  <div class="badge-new-trend">🚀 TENDÊNCIA EMERGENTE</div>
+                  <h4 class="prod-name-title">Mop Spray 360 Max</h4>
+                  <div class="opportunity-metrics">
+                    <div class="metric-box">
+                      <span>Vendas (7d)</span>
+                      <strong>8.420 und</strong>
+                    </div>
+                    <div class="metric-box">
+                      <span>Comissão</span>
+                      <strong class="text-green">22%</strong>
+                    </div>
+                    <div class="metric-box">
+                      <span>Margem Média</span>
+                      <strong>R$ 38.50</strong>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- 5. Safety Panel -->
+            <div class="preview-panel" id="feature-safety">
+              <div class="preview-header">
+                <h3>Segurança da Conta</h3>
+                <span class="panel-pill tag-danger">Antitrust & Proteção</span>
+              </div>
+              <p class="panel-desc">Proteja sua fonte de receita. Nossa ferramenta analisa seus vídeos preventivamente contra as diretrizes do TikTok Shop.</p>
+              
+              <div class="panel-interactive-widget">
+                <div class="alert-dashboard-container">
+                  <div class="main-alert-header">
+                    <span class="alert-status-badge">⚠️ 1 Risco Crítico Encontrado</span>
+                  </div>
+                  <div class="alert-card-item">
+                    <div class="alert-icon-red">❌</div>
+                    <div class="alert-body">
+                      <strong>Uso de clipe protegido por copyright</strong>
+                      <p>O áudio de fundo usado entre 0:12 e 0:18 viola direitos autorais. Recomendamos trocar o som na plataforma do TikTok antes que ocorra a desmonetização.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. Storytelling Section -->
+    <section class="storytelling-section" id="storytelling">
+      <div class="section-container storytelling-container">
+        <div class="story-visual-decor">
+          <div class="space-trajectory">
+            <div class="trajectory-line"></div>
+            <div class="glowing-rocket">🚀</div>
+            <div class="pulsing-radar-ripple"></div>
+          </div>
+        </div>
+        
+        <div class="story-text-block">
+          <span class="section-tag-badge">História da Marca</span>
+          <h2 class="section-title">Todo criador precisa de um foguete</h2>
+          <p class="story-p">
+            Enquanto a maioria tenta crescer apenas com esforço cego, gravando dezenas de vídeos aleatórios por dia, os criadores que realmente escalam e faturam alto usam <strong>dados e direção</strong>.
+          </p>
+          <p class="story-p">
+            O Foguete.Shop reduz drasticamente o tempo gasto pesquisando produtos, analisando concorrentes e testando roteiros ruins por tentativa e erro.
+          </p>
+          <blockquote class="story-quote">
+            "Você continua com a sua arte e criação. O centro de comando do Foguete fornece a rota exata."
+          </blockquote>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. Demonstração Section -->
+    <section class="demo-section" id="demo">
+      <div class="section-container text-center">
+        <span class="section-tag-badge">Demonstração</span>
+        <h2 class="section-title">Veja a inteligência em ação</h2>
+        <p class="section-desc max-w-2xl mx-auto">
+          Assista em menos de dois minutos como configurar seu painel e receber os primeiros insights inteligentes de vídeo e produtos.
+        </p>
+
+        <!-- Video Player Mockup -->
+        <div class="video-player-container" id="video-demo-trigger" commandfor="demo-video-modal" command="show-modal">
+          <div class="video-overlay-play">
+            <div class="play-button-glow">
+              <span class="play-triangle">▶</span>
+            </div>
+            <span class="play-duration-badge">Assista 1:20 min</span>
+          </div>
+          <div class="video-mockup-frame">
+            <div class="mockup-ui-bars">
+              <span></span><span></span><span></span>
+            </div>
+            <!-- Dynamic CSS animation of mock dashboard loading -->
+            <div class="mockup-video-canvas">
+              <div class="moving-charts-mockup">
+                <div class="mock-line"></div>
+                <div class="mock-bar-chart">
+                  <div class="m-bar" style="height: 40%"></div>
+                  <div class="m-bar" style="height: 65%"></div>
+                  <div class="m-bar" style="height: 90%"></div>
+                  <div class="m-bar" style="height: 50%"></div>
+                  <div class="m-bar" style="height: 80%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="demo-cta-wrapper">
+          <button class="btn btn-primary btn-lg open-waitlist-btn" commandfor="waitlist-modal" command="show-modal" id="demo-section-cta">
+            Quero acesso antecipado
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. Prova Social Section -->
+    <section class="proof-section" id="proof">
+      <div class="section-container">
+        <div class="section-header text-center">
+          <span class="section-tag-badge">Prova Social</span>
+          <h2 class="section-title">Criadores que utilizam dados crescem mais rápido</h2>
+          <p class="section-desc">
+            Acelerando resultados reais no ecossistema do TikTok Shop.
+          </p>
+        </div>
+
+        <!-- Metric counters -->
+        <div class="metrics-counters-grid" id="counters-block">
+          <div class="counter-card">
+            <div class="counter-number" data-target="1000000" id="counter-videos">+0</div>
+            <div class="counter-label">Vídeos Analisados</div>
+          </div>
+          <div class="counter-card">
+            <div class="counter-number" data-target="100000" id="counter-products">+0</div>
+            <div class="counter-label">Produtos Monitorados</div>
+          </div>
+          <div class="counter-card">
+            <div class="counter-number" data-target="5000" id="counter-trends">+0</div>
+            <div class="counter-label">Tendências Identificadas</div>
+          </div>
+        </div>
+
+        <!-- Depoimentos -->
+        <div class="testimonials-slider">
+          <div class="testimonial-card">
+            <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
+            <p class="testimonial-text">
+              "Antes eu passava 4 horas por dia caçando áudios e produtos. Com o Foguete, em 15 minutos eu sei exatamente qual roteiro gravar e qual produto vai vender. Meu faturamento dobrou em 3 semanas!"
+            </p>
+            <div class="testimonial-user">
+              <span class="user-avatar">👱‍♀️</span>
+              <div class="user-info-text">
+                <span class="user-name">Clarissa M.</span>
+                <span class="user-handle">@clarissashop.tiktok</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
+            <p class="testimonial-text">
+              "O sistema de alerta de segurança me salvou de perder minha conta. Eu tinha dois vídeos com riscos de direitos autorais e o Foguete me avisou preventivamente. Indispensável para quem joga sério."
+            </p>
+            <div class="testimonial-user">
+              <span class="user-avatar">👨‍💻</span>
+              <div class="user-info-text">
+                <span class="user-name">Rodrigo S.</span>
+                <span class="user-handle">@rodrigo_afiliadopro</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 8. FAQ Section -->
+    <section class="faq-section" id="faq">
+      <div class="section-container max-w-4xl">
+        <div class="section-header text-center">
+          <span class="section-tag-badge">Dúvidas Frequentes</span>
+          <h2 class="section-title">Perguntas Frequentes</h2>
+          <p class="section-desc">
+            Ainda na dúvida se o Foguete é ideal para sua operação? Veja as respostas rápidas abaixo.
+          </p>
+        </div>
+
+        <div class="faq-accordion-wrapper" id="faq-accordion">
+          <!-- FAQ 1 -->
+          <details class="faq-item" id="faq-1">
+            <summary class="faq-summary">
+              O Foguete.Shop é afiliado ao TikTok?
+              <span class="faq-toggle-icon">+</span>
+            </summary>
+            <div class="faq-content">
+              <p>Não. Somos uma plataforma independente do TikTok, das marcas e dos lojistas. Nosso único e exclusivo objetivo é ajudar você a crescer como criador no TikTok Shop por meio de inteligência de dados.</p>
+            </div>
+          </details>
+
+          <!-- FAQ 2 -->
+          <details class="faq-item" id="faq-2">
+            <summary class="faq-summary">
+              Preciso fornecer minha senha da conta?
+              <span class="faq-toggle-icon">+</span>
+            </summary>
+            <div class="faq-content">
+              <p>Não. Analisamos apenas dados públicos disponíveis, não coletamos ou solicitamos nenhuma credencial privada. Precisamos apenas de um comentário da sua conta em um vídeo nosso de validação para confirmar que você é o legítimo proprietário do perfil a ser analisado.</p>
+            </div>
+          </details>
+
+          <!-- FAQ 3 -->
+          <details class="faq-item" id="faq-3">
+            <summary class="faq-summary">
+              Funciona para iniciantes?
+              <span class="faq-toggle-icon">+</span>
+            </summary>
+            <div class="faq-content">
+              <p>Sim! Analisamos a saúde do seu perfil inicial e direcionamos você diretamente para o nicho de mercado e produtos ideais que proporcionam os maiores retornos financeiros com o menor esforço.</p>
+            </div>
+          </details>
+
+          <!-- FAQ 4 -->
+          <details class="faq-item" id="faq-4">
+            <summary class="faq-summary">
+              Funciona para contas já grandes?
+              <span class="faq-toggle-icon">+</span>
+            </summary>
+            <div class="faq-content">
+              <p>Sim. O Foguete.Shop atua como seu copiloto, fornecendo insights detalhados de audiência, detecção avançada de alertas e otimização de ganchos que ajudam a escalar sua equipe e sua receita.</p>
+            </div>
+          </details>
+
+          <!-- FAQ 5 -->
+          <details class="faq-item" id="faq-5">
+            <summary class="faq-summary">
+              Como os dados são obtidos?
+              <span class="faq-toggle-icon">+</span>
+            </summary>
+            <div class="faq-content">
+              <p>Nossa plataforma realiza varreduras de monitoramento automatizadas e análise estatística de informações inteiramente públicas coletadas no TikTok Shop.</p>
+            </div>
+          </details>
+
+          <!-- FAQ 6 -->
+          <details class="faq-item" id="faq-6">
+            <summary class="faq-summary">
+              Existe período gratuito?
+              <span class="faq-toggle-icon">+</span>
+            </summary>
+            <div class="faq-content">
+              <p>Sim! Ao criar a sua conta inicial no Foguete.Shop, você ganha gratuitamente a avaliação completa dos 10 últimos vídeos criados para testar nossa inteligência.</p>
+            </div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- 9. CTA Final Section -->
+    <section class="final-cta-section" id="final-cta">
+      <div class="glow-bg-cta"></div>
+      <div class="section-container text-center max-w-4xl">
+        <h2 class="cta-title">Economize tempo e pare de adivinhar. Seja um Foguete no TikTok Shop.</h2>
+        <p class="cta-subtitle">Entre para a lista de espera e seja um dos primeiros criadores a utilizar o Foguete.Shop.</p>
+        
+        <!-- Interactive Inline Waitlist Form -->
+        <form class="waitlist-inline-form" id="waitlist-form-bottom">
+          <input type="email" placeholder="Digite seu melhor e-mail" required class="waitlist-input" id="waitlist-email-bottom">
+          <button type="submit" class="btn btn-primary btn-lg" id="waitlist-submit-bottom">Quero meu acesso antecipado</button>
+        </form>
+        <p class="form-disclaimer">Zero spam. Cancele sua inscrição quando quiser.</p>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer Navigation -->
+  <footer class="footer-container">
+    <div class="section-container footer-content-wrapper">
+      <div class="footer-brand">
+        <div class="brand-logo-wrapper">
+          <img src="assets/foguete_logo.png" alt="Foguete.Shop Logo" class="brand-logo-img">
+          <span class="brand-name">Foguete<span class="dot">.</span><span class="suffix">Shop</span></span>
+        </div>
+        <p class="footer-tagline">Seu radar de crescimento e conversão no TikTok Shop.</p>
+      </div>
+      
+      <div class="footer-links">
+        <div class="links-group">
+          <strong>Navegação</strong>
+          <a href="#problems">Dores</a>
+          <a href="#solution">Solução</a>
+          <a href="#features">Recursos</a>
+        </div>
+        <div class="links-group">
+          <strong>Termos</strong>
+          <a href="#">Políticas de Privacidade</a>
+          <a href="#">Termos de Uso</a>
+          <a href="#">Contato</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom text-center">
+      <p>&copy; 2026 Foguete.Shop. Todos os direitos reservados. Não afiliado ao TikTok Inc.</p>
+    </div>
+  </footer>
+
+  <!-- ================= DIALOG MODALS ================= -->
+
+  <!-- Modal 1: Waitlist Modal -->
+  <dialog id="waitlist-modal" closedby="any" aria-labelledby="modal-waitlist-title">
+    <div class="modal-dialog-content">
+      <button class="modal-close-x" commandfor="waitlist-modal" command="close" aria-label="Fechar modal">×</button>
+      
+      <div class="modal-body-wrapper text-center">
+        <span class="modal-icon">🚀</span>
+        <h2 id="modal-waitlist-title" class="modal-title-text">Entre para a Lista de Espera</h2>
+        <p class="modal-desc-text">Garanta seu convite de acesso antecipado para a versão beta e receba bônus de créditos na plataforma.</p>
+        
+        <form class="waitlist-modal-form" id="waitlist-form-modal">
+          <div class="form-group-field">
+            <label for="waitlist-name-modal">Nome Completo</label>
+            <input type="text" id="waitlist-name-modal" placeholder="Seu nome" required class="modal-input-field">
+          </div>
+          <div class="form-group-field">
+            <label for="waitlist-email-modal">E-mail Comercial</label>
+            <input type="email" id="waitlist-email-modal" placeholder="seu@email.com" required class="modal-input-field">
+          </div>
+          <div class="form-group-field">
+            <label for="waitlist-role-modal">Qual seu perfil?</label>
+            <select id="waitlist-role-modal" class="modal-input-field" required>
+              <option value="" disabled selected>Selecione uma opção...</option>
+              <option value="creator">Criador no TikTok Shop</option>
+              <option value="affiliate">Afiliado Iniciante</option>
+              <option value="agency">Agência / Gestor de Creators</option>
+              <option value="other">Outro</option>
+            </select>
+          </div>
+          <button type="submit" class="btn btn-primary btn-lg w-full" id="waitlist-modal-submit">Confirmar meu Acesso</button>
+        </form>
+      </div>
+    </div>
+  </dialog>
+
+  <!-- Modal 2: Demo Video Modal -->
+  <dialog id="demo-video-modal" closedby="any" aria-labelledby="modal-video-title">
+    <div class="modal-dialog-content modal-video-layout">
+      <button class="modal-close-x" commandfor="demo-video-modal" command="close" aria-label="Fechar vídeo">×</button>
+      
+      <h3 id="modal-video-title" class="sr-only">Demonstração da plataforma Foguete.Shop</h3>
+      <div class="video-embed-aspect">
+        <!-- High-fidelity interactive simulated dashboard tour inside modal -->
+        <div class="simulated-tour-widget">
+          <div class="tour-screen" id="tour-screen-content">
+            <div class="tour-header">
+              <span>🚀 FOGUETE.SHOP INTEL BETA</span>
+              <span class="tour-timer" id="tour-timer-display">00:00</span>
+            </div>
+            
+            <div class="tour-main-body" id="tour-step-render">
+              <!-- Tour content dynamically injected by JavaScript simulation -->
+              <div class="loading-spinner-wrapper">
+                <div class="spinner"></div>
+                <p>Carregando vídeo de simulação...</p>
+              </div>
+            </div>
+
+            <div class="tour-controls">
+              <button class="btn btn-secondary btn-sm" id="tour-prev-btn">◄ Voltar</button>
+              <div class="tour-progress-bullets" id="tour-bullets-container">
+                <!-- Bullets injected dynamically -->
+              </div>
+              <button class="btn btn-primary btn-sm" id="tour-next-btn">Avançar ►</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </dialog>
+
+  <!-- Modal 3: Success Confirmation Modal -->
+  <dialog id="success-modal" closedby="any" aria-labelledby="modal-success-title">
+    <div class="modal-dialog-content text-center">
+      <button class="modal-close-x" commandfor="success-modal" command="close" aria-label="Fechar confirmação">×</button>
+      
+      <div class="success-illustration">
+        <div class="checkmark-circle">✓</div>
+        <div class="particles">🚀✨🎯</div>
+      </div>
+      
+      <h2 id="modal-success-title" class="modal-title-text text-green">Inscrição Confirmada!</h2>
+      <p class="modal-desc-text">Você foi adicionado à lista de espera prioritária do Foguete.Shop.</p>
+      
+      <div class="queue-status-box">
+        <span class="queue-label">Sua posição na fila:</span>
+        <strong class="queue-number" id="success-queue-pos">#2,482</strong>
+        <p class="queue-tip">Indique a plataforma para outro criador e pule 500 posições!</p>
+      </div>
+
+      <button class="btn btn-primary btn-lg w-full" commandfor="success-modal" command="close">Excelente, entendi</button>
+    </div>
+  </dialog>
+
+  <!-- JavaScript Files -->
+  <script src="script.js" type="module"></script>
+</body>
+</html>
