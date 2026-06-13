@@ -92,7 +92,7 @@ function initModalsAndForms() {
     }
 
     // Close waitlist modal if open
-    if (waitlistModal.open) {
+    if (waitlistModal && waitlistModal.open) {
       waitlistModal.close();
     }
 
@@ -125,12 +125,18 @@ function initModalsAndForms() {
     });
   }
 
-  // Custom secondary button CTA trigger in Hero
+  // Custom secondary button CTA trigger in Hero (Ver Demonstração)
   const secondaryCta = document.getElementById('hero-secondary-cta');
   if (secondaryCta) {
     secondaryCta.addEventListener('click', () => {
       if (demoVideoModal) {
         demoVideoModal.showModal();
+        // Trigger manual start of tour timer
+        const timerDisplay = document.getElementById('tour-timer-display');
+        if (timerDisplay) {
+          const videoTrigger = document.getElementById('video-demo-trigger');
+          if (videoTrigger) videoTrigger.click();
+        }
       }
     });
   }
@@ -297,7 +303,7 @@ function initDemoTour() {
               > ANALYZING: 30 vídeos carregados.<br>
               > SCORE OBTIDO: <span style="color: #10b981; font-weight: bold;">88/100 (Ótimo)</span>
             </div>
-            <div style="background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.05); padding: 8px; border-radius: 6px; font-size: 0.7rem; color: var(--color-text-secondary);">
+            <div style="background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.05); padding: 8px; border-radius: 6px; font-size: 0.7rem; color: #cbd5e1;">
               <strong>Sugestão imediata:</strong> Melhore o gancho visual dos vídeos com menos de 3 segundos de retenção.
             </div>
           </div>
@@ -320,7 +326,7 @@ function initDemoTour() {
               <span>Vídeo #08 (Umidificador Led)</span>
               <span style="color: #ef4444;">Retenção Inicial: 42%</span>
             </div>
-            <div style="font-size: 0.7rem; color: var(--color-text-secondary); line-height: 1.4;">
+            <div style="font-size: 0.7rem; color: #cbd5e1; line-height: 1.4;">
               <strong>Diagnóstico Foguete:</strong> O gancho sonoro demorou 4 segundos para aparecer. O recomendável para o algoritmo do TikTok Shop são no máximo 1.8 segundos.
             </div>
           </div>
@@ -343,7 +349,7 @@ function initDemoTour() {
               <span style="color: #10b981;">🚀 PRODUTO EM ACELERAÇÃO REVELADO:</span><br>
               <strong>Bastão de Maquiagem FPS 50+</strong>
             </div>
-            <div style="display: flex; justify-content: space-between; font-size: 0.7rem; color: var(--color-text-secondary);">
+            <div style="display: flex; justify-content: space-between; font-size: 0.7rem; color: #cbd5e1;">
               <span>Comissão: 25% (Alta)</span>
               <span>Risco: Baixo</span>
             </div>
@@ -366,7 +372,7 @@ function initDemoTour() {
             <div style="background: rgba(239, 68, 68, 0.05); border: 1px solid rgba(239, 68, 68, 0.2); padding: 8px; border-radius: 6px; font-size: 0.75rem; margin-bottom: 6px; color: #ef4444;">
               ⚠️ 1 ALERTA DETECTADO
             </div>
-            <div style="font-size: 0.7rem; color: var(--color-text-secondary); line-height: 1.4;">
+            <div style="font-size: 0.7rem; color: #cbd5e1; line-height: 1.4;">
               Áudio de fundo do vídeo #12 possui restrição comercial no TikTok Shop. Substitua o som para evitar penalizações.
             </div>
           </div>
@@ -388,11 +394,11 @@ function initDemoTour() {
 
   function startTimer() {
     secondsElapsed = 0;
-    timerDisplay.textContent = "00:00";
+    if (timerDisplay) timerDisplay.textContent = "00:00";
     clearInterval(timerInterval);
     timerInterval = setInterval(() => {
       secondsElapsed++;
-      timerDisplay.textContent = formatTime(secondsElapsed);
+      if (timerDisplay) timerDisplay.textContent = formatTime(secondsElapsed);
       if (secondsElapsed >= 80) {
         clearInterval(timerInterval);
       }
@@ -407,26 +413,30 @@ function initDemoTour() {
     const step = tourSteps[index];
     if (!step) return;
 
-    renderContainer.innerHTML = step.contentHtml;
+    if (renderContainer) renderContainer.innerHTML = step.contentHtml;
 
     // Render bullets
-    bulletsContainer.innerHTML = '';
-    tourSteps.forEach((_, idx) => {
-      const bullet = document.createElement('span');
-      bullet.className = `tour-bullet ${idx === index ? 'active' : ''}`;
-      bullet.addEventListener('click', () => {
-        currentStep = idx;
-        renderStep(currentStep);
+    if (bulletsContainer) {
+      bulletsContainer.innerHTML = '';
+      tourSteps.forEach((_, idx) => {
+        const bullet = document.createElement('span');
+        bullet.className = `tour-bullet ${idx === index ? 'active' : ''}`;
+        bullet.addEventListener('click', () => {
+          currentStep = idx;
+          renderStep(currentStep);
+        });
+        bulletsContainer.appendChild(bullet);
       });
-      bulletsContainer.appendChild(bullet);
-    });
+    }
 
     // Toggle button visibilities
-    prevBtn.disabled = index === 0;
-    if (index === tourSteps.length - 1) {
-      nextBtn.textContent = "Concluir Demo";
-    } else {
-      nextBtn.textContent = "Avançar ►";
+    if (prevBtn) prevBtn.disabled = index === 0;
+    if (nextBtn) {
+      if (index === tourSteps.length - 1) {
+        nextBtn.textContent = "Concluir Demo";
+      } else {
+        nextBtn.textContent = "Avançar ►";
+      }
     }
   }
 

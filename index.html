@@ -9,25 +9,20 @@
   <!-- SEO & Open Graph -->
   <meta property="og:title" content="Foguete.Shop — O Radar de Crescimento no TikTok Shop">
   <meta property="og:description" content="Pare de adivinhar o que vende. Analise milhões de dados públicos do TikTok Shop e encontre a rota perfeita para seu perfil.">
-  <meta property="og:image" content="assets/foguete_logo.svg">
+  <meta property="og:image" content="logo.svg">
   <meta property="og:type" content="website">
   <meta name="twitter:card" content="summary_large_image">
-  
-  <!-- Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   
   <!-- CSS Stylesheet -->
   <link rel="stylesheet" href="style.css">
 </head>
-<body class="mission-control-theme">
+<body>
 
   <!-- Header Navigation -->
   <header class="navbar-container" id="main-header">
     <div class="navbar-content">
       <a href="#" class="brand-logo-wrapper" id="brand-link">
-        <img src="assets/foguete_logo.svg" alt="Foguete.Shop Logo" class="brand-logo-img">
+        <img src="logo.svg" alt="Foguete.Shop Logo" class="brand-logo-img">
         <span class="brand-name">Foguete<span class="dot">.</span><span class="suffix">Shop</span></span>
       </a>
       
@@ -64,7 +59,7 @@
         <div class="hero-text-block">
           <div class="tag-badge">🚀 Centro de Comando TikTok Shop</div>
           <h1 class="hero-title">
-            Descubra os <span class="gradient-text-orange">produtos certos</span> e os <span class="gradient-text-red">vídeos certos</span> para vender mais no TikTok Shop
+            Descubra os <span class="highlight-orange">produtos certos</span> e os <span class="highlight-red">vídeos certos</span> para vender mais no TikTok Shop
           </h1>
           <p class="hero-subtitle">
             O Foguete.Shop analisa milhões de dados do TikTok Shop para mostrar oportunidades, avaliar seu perfil e indicar exatamente onde melhorar.
@@ -73,21 +68,21 @@
             <button class="btn btn-primary btn-lg open-waitlist-btn" commandfor="waitlist-modal" command="show-modal" id="hero-primary-cta">
               Entrar para Lista de Espera
             </button>
-            <button class="btn btn-secondary btn-lg" id="hero-secondary-cta" href="#demo">
+            <button class="btn btn-secondary btn-lg" id="hero-secondary-cta">
               <span class="btn-icon">▶</span> Ver Demonstração
             </button>
           </div>
           <div class="hero-social-proof-brief">
             <div class="avatars-group">
-              <span class="avatar-circle">👩‍💻</span>
-              <span class="avatar-circle">👨‍🎨</span>
-              <span class="avatar-circle">🧑‍🚀</span>
+              <span class="avatar-circle">👤</span>
+              <span class="avatar-circle">👤</span>
+              <span class="avatar-circle">👤</span>
             </div>
             <p class="brief-text">Junte-se a <strong>+2.400 criadores</strong> na lista de espera esta semana.</p>
           </div>
         </div>
 
-        <!-- Hero Right Side: Dynamic Interactive Dashboard Widget -->
+        <!-- Hero Right Side: Dynamic Interactive Dashboard Widget (Light Theme) -->
         <div class="hero-visual-block">
           <div class="dashboard-window-mockup" id="hero-dashboard-widget">
             <div class="window-header browser-header">
@@ -114,13 +109,13 @@
                 <span class="card-tag">DESEMPENHO</span>
                 <h4 class="card-label">Score da Conta</h4>
                 <div class="score-circle-container">
-                  <svg class="progress-ring" width="100" height="100">
-                    <circle class="progress-ring__circle-bg" stroke="#101b35" stroke-width="8" fill="transparent" r="40" cx="50" cy="50"/>
-                    <circle class="progress-ring__circle" stroke="url(#orange-grad)" stroke-width="8" stroke-dasharray="251.2" stroke-dashoffset="30.14" fill="transparent" r="40" cx="50" cy="50"/>
+                  <svg class="progress-ring" width="80" height="80">
+                    <circle class="progress-ring__circle-bg" stroke="rgba(3, 17, 41, 0.05)" stroke-width="6" fill="transparent" r="34" cx="40" cy="40"/>
+                    <circle class="progress-ring__circle" stroke="url(#green-grad)" stroke-width="6" stroke-dasharray="213.6" stroke-dashoffset="25.63" fill="transparent" r="34" cx="40" cy="40"/>
                     <defs>
-                      <linearGradient id="orange-grad" x1="0%" y1="0%" x2="100%" y2="100%">
-                        <stop offset="0%" stop-color="#f97316" />
-                        <stop offset="100%" stop-color="#ef4444" />
+                      <linearGradient id="green-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" stop-color="#228B22" />
+                        <stop offset="100%" stop-color="#228B22" />
                       </linearGradient>
                     </defs>
                   </svg>
@@ -221,7 +216,7 @@
             <div class="card-icon">📉</div>
             <h3 class="card-title">Produtos errados</h3>
             <p class="card-text">
-              Você escolhe produtos baseados em intuição, sem evidências de demanda ou com comissão inviável.
+              Você escolhe produtos baseados em outros criadores, sem evidências de demanda ou de público diferente.
             </p>
           </div>
 
@@ -253,7 +248,7 @@
           <span class="section-tag-badge tag-primary-color">Nossa Solução</span>
           <h2 class="section-title">O radar que faltava para seu crescimento</h2>
           <p class="section-desc">
-            O Foguete.Shop transforma milhões de dados públicos do TikTok Shop em recomendações práticas para você agir imediatamente e com total segurança.
+            O Foguete.Shop transforma milhões de dados públicos do TikTok Shop em recomendações práticas para você agir imediatamente e com segurança.
           </p>
           <div class="solution-bullets">
             <div class="bullet-item">
@@ -267,7 +262,7 @@
               <span class="bullet-check">✓</span>
               <div>
                 <strong>Validação Baseada em Evidências</strong>
-                <p>Veja estatísticas de demanda reais antes de filmar ou afiliar-se a um produto.</p>
+                <p>Veja estatísticas de demanda reais antes de gravar ou afiliar-se a um produto.</p>
               </div>
             </div>
           </div>
@@ -278,12 +273,12 @@
           <div class="radar-flow-diagram" id="solution-radar-flow">
             <div class="flow-stage stage-tiktok">
               <div class="stage-icon">📱</div>
-              <div class="stage-label">TikTok Shop</div>
-              <div class="stage-sub">Milhões de Dados</div>
+              <div class="stage-label">TTShop</div>
+              <div class="stage-sub">Dados</div>
             </div>
             <div class="flow-arrow">
               <svg viewBox="0 0 100 20" fill="none" class="connecting-line">
-                <path d="M0,10 H100" stroke="#f97316" stroke-width="2" stroke-dasharray="6,4" class="pulse-path" />
+                <path d="M0,10 H100" stroke="#f76205" stroke-width="2" stroke-dasharray="6,4" class="pulse-path" />
               </svg>
             </div>
             <div class="flow-stage stage-engine">
@@ -293,11 +288,11 @@
             </div>
             <div class="flow-arrow">
               <svg viewBox="0 0 100 20" fill="none" class="connecting-line">
-                <path d="M0,10 H100" stroke="#ef4444" stroke-width="2" stroke-dasharray="6,4" class="pulse-path" />
+                <path d="M0,10 H100" stroke="#D94A38" stroke-width="2" stroke-dasharray="6,4" class="pulse-path" />
               </svg>
             </div>
             <div class="flow-stage stage-action">
-              <div class="stage-icon">🛠️</div>
+              <div class="stage-icon">🧭</div>
               <div class="stage-label">Direção</div>
               <div class="stage-sub">Ação Direta</div>
             </div>
@@ -307,9 +302,9 @@
               </svg>
             </div>
             <div class="flow-stage stage-sales">
-              <div class="stage-icon bg-pulse-green">💰</div>
+              <div class="stage-icon bg-pulse-green">💲</div>
               <div class="stage-label">Vendas</div>
-              <div class="stage-sub">Escala & ROI</div>
+              <div class="stage-sub">Mais GMV</div>
             </div>
           </div>
         </div>
@@ -436,7 +431,7 @@
                     </div>
                     <div class="progress-bar-group">
                       <label>Gatilhos de Conversão (CTA)</label>
-                      <div class="progress-track"><div class="progress-fill" style="width: 48%; background-color: var(--color-orange)"></div></div>
+                      <div class="progress-track"><div class="progress-fill" style="width: 48%; background-color: var(--color-accent-orange)"></div></div>
                       <span class="pct">48% - Precisa melhorar</span>
                     </div>
                   </div>
@@ -547,24 +542,26 @@
           <div class="space-trajectory logo-trajectory">
             <div class="trajectory-line"></div>
             <div class="logo-animation-wrapper">
-              <img src="assets/foguete_logo.svg" alt="Foguete Logo" class="animated-brand-svg">
+              <img src="logo.svg" alt="Foguete Logo" class="animated-brand-svg">
             </div>
             <div class="pulsing-radar-ripple"></div>
           </div>
         </div>
         
         <div class="story-text-block">
-          <span class="section-tag-badge">História da Marca</span>
-          <h2 class="section-title">Todo criador precisa de um foguete</h2>
-          <p class="story-p">
-            Enquanto a maioria tenta crescer apenas com esforço cego, gravando dezenas de vídeos aleatórios por dia, os criadores que realmente escalam e faturam alto usam <strong>dados e direção</strong>.
-          </p>
-          <p class="story-p">
-            O Foguete.Shop reduz drasticamente o tempo gasto pesquisando produtos, analisando concorrentes e testando roteiros ruins por tentativa e erro.
-          </p>
-          <blockquote class="story-quote">
-            "Você continua com a sua arte e criação. O centro de comando do Foguete fornece a rota exata."
-          </blockquote>
+          <div class="story-window">
+              <span class="section-tag-badge">História da Marca</span>
+              <h2 class="section-title">Todo criador precisa de um foguete</h2>
+              <p class="story-p">
+                Enquanto a maioria tenta crescer apenas com esforço cego, gravando dezenas de vídeos aleatórios por dia, os criadores que realmente escalam e faturam alto usam <strong>dados e direção</strong>.
+              </p>
+              <p class="story-p">
+                O Foguete.Shop reduz drasticamente o tempo gasto pesquisando produtos, analisando concorrentes e testando roteiros ruins por tentativa e erro.
+              </p>
+              <blockquote class="story-quote">
+                "Você continua com a sua arte e criação. O centro de comando do Foguete fornece a rota exata."
+              </blockquote>
+          </div>
         </div>
       </div>
     </section>
@@ -575,7 +572,7 @@
         <span class="section-tag-badge">Demonstração</span>
         <h2 class="section-title">Veja a inteligência em ação</h2>
         <p class="section-desc max-w-2xl mx-auto">
-          Assista em menos de dois minutos como configurar seu painel e receber os primeiros insights inteligentes de vídeo e produtos.
+          Assista como configurar seu painel e receber os primeiros insights inteligentes de vídeo e produtos.
         </p>
 
         <!-- Video Player Mockup -->
@@ -584,7 +581,7 @@
             <div class="play-button-glow">
               <span class="play-triangle">▶</span>
             </div>
-            <span class="play-duration-badge">Assista 1:20 min</span>
+            <span class="play-duration-badge">Ver Simulação 1:20 min</span>
           </div>
           <div class="video-mockup-frame">
             <div class="mockup-ui-bars">
@@ -618,7 +615,7 @@
     <section class="proof-section" id="proof">
       <div class="section-container">
         <div class="section-header text-center">
-          <span class="section-tag-badge">Prova Social</span>
+          <span class="section-tag-badge">Dados do Foguete</span>
           <h2 class="section-title">Criadores que utilizam dados crescem mais rápido</h2>
           <p class="section-desc">
             Acelerando resultados reais no ecossistema do TikTok Shop.
@@ -628,15 +625,15 @@
         <!-- Metric counters -->
         <div class="metrics-counters-grid" id="counters-block">
           <div class="counter-card">
-            <div class="counter-number" data-target="1000000" id="counter-videos">+0</div>
+            <div class="counter-number" data-target="100000" id="counter-videos">+0</div>
             <div class="counter-label">Vídeos Analisados</div>
           </div>
           <div class="counter-card">
-            <div class="counter-number" data-target="100000" id="counter-products">+0</div>
+            <div class="counter-number" data-target="20000" id="counter-products">+0</div>
             <div class="counter-label">Produtos Monitorados</div>
           </div>
           <div class="counter-card">
-            <div class="counter-number" data-target="5000" id="counter-trends">+0</div>
+            <div class="counter-number" data-target="1000" id="counter-trends">+0</div>
             <div class="counter-label">Tendências Identificadas</div>
           </div>
         </div>
@@ -700,7 +697,7 @@
           <!-- FAQ 2 -->
           <details class="faq-item" id="faq-2">
             <summary class="faq-summary">
-              Preciso fornecer minha senha da conta?
+              Preciso fornecer minha senha?
               <span class="faq-toggle-icon">+</span>
             </summary>
             <div class="faq-content">
@@ -737,7 +734,7 @@
               <span class="faq-toggle-icon">+</span>
             </summary>
             <div class="faq-content">
-              <p>Nossa plataforma realiza varreduras de monitoramento automatizadas e análise estatística de informações inteiramente públicas coletadas no TikTok Shop.</p>
+              <p>Nossa plataforma realiza varreduras de monitoramento automatizadas e análise estatística de informações públicas coletadas no TikTok Shop e em outras plataformas.</p>
             </div>
           </details>
 
@@ -748,7 +745,7 @@
               <span class="faq-toggle-icon">+</span>
             </summary>
             <div class="faq-content">
-              <p>Sim! Ao criar a sua conta inicial no Foguete.Shop, você ganha gratuitamente a avaliação completa dos 10 últimos vídeos criados para testar nossa inteligência.</p>
+              <p>Sim! Ao criar a sua conta inicial no Foguete.Shop, você ganha gratuitamente a avaliação completa de 10 vídeos criados para testar nossa inteligência.</p>
             </div>
           </details>
         </div>
@@ -778,7 +775,7 @@
     <div class="section-container footer-content-wrapper">
       <div class="footer-brand">
         <div class="brand-logo-wrapper">
-          <img src="assets/foguete_logo.svg" alt="Foguete.Shop Logo" class="brand-logo-img">
+          <img src="logo.svg" alt="Foguete.Shop Logo" class="brand-logo-img">
           <span class="brand-name">Foguete<span class="dot">.</span><span class="suffix">Shop</span></span>
         </div>
         <p class="footer-tagline">Seu radar de crescimento e conversão no TikTok Shop.</p>
@@ -841,7 +838,7 @@
     </div>
   </dialog>
 
-  <!-- Modal 2: Demo Video Modal -->
+  <!-- Modal 2: Demo Video Modal (Walkthrough Simulado) -->
   <dialog id="demo-video-modal" closedby="any" aria-labelledby="modal-video-title">
     <div class="modal-dialog-content modal-video-layout">
       <button class="modal-close-x" commandfor="demo-video-modal" command="close" aria-label="Fechar vídeo">×</button>
@@ -857,7 +854,6 @@
             </div>
             
             <div class="tour-main-body" id="tour-step-render">
-              <!-- Tour content dynamically injected by JavaScript simulation -->
               <div class="loading-spinner-wrapper">
                 <div class="spinner"></div>
                 <p>Carregando vídeo de simulação...</p>
